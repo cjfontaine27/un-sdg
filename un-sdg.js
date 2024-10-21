@@ -165,6 +165,7 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
     else if (this.goal === 'circle') {
       imgSrc = new URL(`../lib/svgs/${this.goal}.png`, import.meta.url).href;
     }
+    
     return html` <style>
         :host {
           --width: ${this.width};
