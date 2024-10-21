@@ -161,10 +161,8 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
 
   // Lit render the HTML
   render() {
-    return html`
-    <div class="wrapper">
-      <h3><span>${this.t.title}:</span> ${this.title}</h3>
-      <slot></slot>
+    return html` <div class="wrapper">
+      <img src="../lib/svgs/goal-1.svg" />
     </div>`;
   }
 
