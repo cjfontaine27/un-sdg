@@ -20,19 +20,13 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
 
   constructor() {
     super();
-    this.title = "";
-    this.t = this.t || {};
-    this.t = {
-      ...this.t,
-      title: "Title",
-    };
-    this.registerLocalization({
-      context: this,
-      localesPath:
-        new URL("./locales/un-sdg.ar.json", import.meta.url).href +
-        "/../",
-      locales: ["ar", "es", "hi", "zh"],
-    });
+    this.goal = "circle";
+    this.width = "254px";
+    this.height = "254px";
+    this.label = "";
+    this.loading = "lazy";
+    this.fetchPriority = "low";
+    this.colorOnly = false;
   }
 
   // Lit reactive properties
@@ -166,6 +160,7 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
       <img src="../lib/svgs/goal-2.svg" />
 
     </div>`;
+
   }
 
   /**
