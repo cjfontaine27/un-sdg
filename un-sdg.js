@@ -155,12 +155,15 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
 
   // Lit render the HTML
   render() {
-    let imgSrc = `../lib/svgs/goal-${this.goal}.svg`;
+ 
+    let imgSrc = new URL(`../lib/svgs/goal-${this.goal}.svg`, import.meta.url).href;
 
-    if (this.goal === "all") {
-      imgSrc = `../lib/svgs/${this.goal}.svg`;
-    } else if (this.goal === "circle") {
-      imgSrc = `../lib/svgs/${this.goal}.png`;
+    if (this.goal === 'all') {
+      imgSrc = new URL(`../lib/svgs/${this.goal}.svg`, import.meta.url).href;
+    }
+
+    else if (this.goal === 'circle') {
+      imgSrc = new URL(`../lib/svgs/${this.goal}.png`, import.meta.url).href;
     }
     return html` <style>
         :host {
