@@ -163,6 +163,8 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html` <div class="wrapper">
       <img src="../lib/svgs/goal-1.svg" />
+      <img src="../lib/svgs/goal-2.svg" />
+
     </div>`;
   }
 
