@@ -57,7 +57,7 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
         height: var(--height, 254px);
       }
 
-      image {
+      img {
         width: 100%;
         height: 100%;
       }
