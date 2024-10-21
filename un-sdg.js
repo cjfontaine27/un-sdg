@@ -53,6 +53,8 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
         color: var(--ddd-theme-primary);
         background-color: var(--ddd-theme-accent);
         font-family: var(--ddd-font-navigation);
+        width: var(--width, 254px);
+        height: var(--height, 254px);
       }
       .wrapper {
         margin: var(--ddd-spacing-2);
