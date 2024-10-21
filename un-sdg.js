@@ -50,16 +50,19 @@ export class unSdg extends DDDSuper(I18NMixin(LitElement)) {
     css`
       :host {
         display: block;
-        width: var(--width, 254px);
-        height: var(--height, 254px);
         color: var(--ddd-theme-primary);
         background-color: var(--ddd-theme-accent);
         font-family: var(--ddd-font-navigation);
+        width: var(--width, 254px);
+        height: var(--height, 254px);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
       }
 
       .wrapper {
-        width: var(--width, 254px);
-        height: var(--height, 254px);
         margin: var(--ddd-spacing-2);
         padding: var(--ddd-spacing-4);
       }
